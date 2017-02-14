@@ -16,12 +16,15 @@ class MainViewController: UIViewController {
     var bookController: BookViewController!
     var controllers = [UIViewController]()
 
+    @IBOutlet var navView: UIView!
     
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationItem.titleView = self.navView
+        
         //获取到嵌入的UIPageViewController
         pageViewController = self.childViewControllers.first as! UIPageViewController
         
@@ -45,7 +48,21 @@ class MainViewController: UIViewController {
     
     }
 
+    @IBAction func OnePageAction(_ sender: Any) {
+        
+        pageViewController.setViewControllers([musicController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+        
+    }
 
+    @IBAction func twoViewController(_ sender: Any) {
+        pageViewController.setViewControllers([movieController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+    }
+    
+    @IBAction func threePageAction(_ sender: Any) {
+        pageViewController.setViewControllers([bookController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
