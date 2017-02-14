@@ -21,6 +21,10 @@
 		823D05501E51A87300C7543D /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D054F1E51A87300C7543D /* ThreeViewController.swift */; };
 		82E7C2571E52D55A0070A091 /* ThreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7C2551E52D5590070A091 /* ThreeTableViewCell.swift */; };
 		82E7C2581E52D55A0070A091 /* ThreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E7C2561E52D55A0070A091 /* ThreeTableViewCell.xib */; };
+		82E7C25A1E52E90B0070A091 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7C2591E52E90B0070A091 /* MainViewController.swift */; };
+		82E7C25C1E52EB540070A091 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7C25B1E52EB540070A091 /* MovieViewController.swift */; };
+		82E7C25E1E52EBA10070A091 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7C25D1E52EBA10070A091 /* MusicViewController.swift */; };
+		82E7C2601E52EBAA0070A091 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7C25F1E52EBAA0070A091 /* BookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		823D054F1E51A87300C7543D /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		82E7C2551E52D5590070A091 /* ThreeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeTableViewCell.swift; sourceTree = "<group>"; };
 		82E7C2561E52D55A0070A091 /* ThreeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeTableViewCell.xib; sourceTree = "<group>"; };
+		82E7C2591E52E90B0070A091 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		82E7C25B1E52EB540070A091 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		82E7C25D1E52EBA10070A091 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		82E7C25F1E52EBAA0070A091 /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,10 @@
 				823D054F1E51A87300C7543D /* ThreeViewController.swift */,
 				82E7C2551E52D5590070A091 /* ThreeTableViewCell.swift */,
 				82E7C2561E52D55A0070A091 /* ThreeTableViewCell.xib */,
+				82E7C2591E52E90B0070A091 /* MainViewController.swift */,
+				82E7C25D1E52EBA10070A091 /* MusicViewController.swift */,
+				82E7C25B1E52EB540070A091 /* MovieViewController.swift */,
+				82E7C25F1E52EBAA0070A091 /* BookViewController.swift */,
 				823D051F1E51A03300C7543D /* Main.storyboard */,
 				823D05221E51A03300C7543D /* Assets.xcassets */,
 				823D05241E51A03300C7543D /* LaunchScreen.storyboard */,
@@ -357,10 +369,14 @@
 				823D054E1E51A86B00C7543D /* TwoViewController.swift in Sources */,
 				823D051E1E51A03300C7543D /* ViewController.swift in Sources */,
 				823D054A1E51A26A00C7543D /* NavBarView.swift in Sources */,
+				82E7C2601E52EBAA0070A091 /* BookViewController.swift in Sources */,
 				823D05501E51A87300C7543D /* ThreeViewController.swift in Sources */,
 				823D051C1E51A03300C7543D /* AppDelegate.swift in Sources */,
+				82E7C25C1E52EB540070A091 /* MovieViewController.swift in Sources */,
+				82E7C25E1E52EBA10070A091 /* MusicViewController.swift in Sources */,
 				823D054C1E51A86400C7543D /* OneViewController.swift in Sources */,
 				82E7C2571E52D55A0070A091 /* ThreeTableViewCell.swift in Sources */,
+				82E7C25A1E52E90B0070A091 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
