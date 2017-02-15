@@ -13,7 +13,15 @@ class MusicViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let banner = BannerView.init(frame: .init(x: 0, y: 0, width: self.view.bounds.size.width, height: 300), ImagesArr: ["img_01","img_02","img_03","img_04","img_05"])
+        banner.Tapdeletage = { tag in
+        print("---------\(tag)")
+        
+        }
+        
+        self.view.addSubview(banner)
+    
+    
     }
 
     override func didReceiveMemoryWarning() {

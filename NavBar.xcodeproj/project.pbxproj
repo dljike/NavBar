@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6FD0742B15AA17021F3B3A14 /* Pods_NavBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8011776DEA74CBE57F6D60D2 /* Pods_NavBar.framework */; };
+		822685F41E541F4400A5BEEE /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822685F31E541F4400A5BEEE /* BannerView.swift */; };
 		823D051C1E51A03300C7543D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D051B1E51A03300C7543D /* AppDelegate.swift */; };
 		823D051E1E51A03300C7543D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D051D1E51A03300C7543D /* ViewController.swift */; };
 		823D05211E51A03300C7543D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823D051F1E51A03300C7543D /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		1A0F3B9C5A03718BDD86C3E3 /* Pods-NavBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavBar/Pods-NavBar.debug.xcconfig"; sourceTree = "<group>"; };
 		389FEFC2EC5EE7F4463283A2 /* Pods-NavBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavBar/Pods-NavBar.release.xcconfig"; sourceTree = "<group>"; };
 		8011776DEA74CBE57F6D60D2 /* Pods_NavBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		822685F31E541F4400A5BEEE /* BannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		823D05181E51A03300C7543D /* NavBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		823D051B1E51A03300C7543D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		823D051D1E51A03300C7543D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				82E7C25B1E52EB540070A091 /* MovieViewController.swift */,
 				82E7C2611E53084C0070A091 /* MoviewTableViewCell.swift */,
 				82E7C25F1E52EBAA0070A091 /* BookViewController.swift */,
+				822685F31E541F4400A5BEEE /* BannerView.swift */,
 				823D051F1E51A03300C7543D /* Main.storyboard */,
 				823D05221E51A03300C7543D /* Assets.xcassets */,
 				823D05241E51A03300C7543D /* LaunchScreen.storyboard */,
@@ -380,6 +383,7 @@
 				82E7C25E1E52EBA10070A091 /* MusicViewController.swift in Sources */,
 				823D054C1E51A86400C7543D /* OneViewController.swift in Sources */,
 				82E7C2571E52D55A0070A091 /* ThreeTableViewCell.swift in Sources */,
+				822685F41E541F4400A5BEEE /* BannerView.swift in Sources */,
 				82E7C25A1E52E90B0070A091 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
