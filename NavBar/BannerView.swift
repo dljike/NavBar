@@ -31,7 +31,7 @@ class BannerView: UIView,UIScrollViewDelegate {
         self.scrollerView = UIScrollView.init(frame: CGRect(x: 0, y: 0, width: width, height: frame.size.height))
         self.addSubview(self.scrollerView)
         
-        self.pageControl = UIPageControl.init(frame: .init(x: (frame.size.width - 100)/2, y:  frame.size.height - 20, width: 100, height: 20))
+        self.pageControl = UIPageControl.init(frame: .init(x: (width - 100)/2, y:  frame.size.height - 20, width: 100, height: 20))
         self.addSubview(self.pageControl)
         
         
@@ -113,8 +113,12 @@ extension BannerView{
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-         self.timer.invalidate()
-        self.timer = nil;
+        if self.timer != nil{
+            self.timer.invalidate()
+            self.timer = nil
+        
+        }
+  
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

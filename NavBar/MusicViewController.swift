@@ -12,8 +12,8 @@ class MusicViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let banner = BannerView.init(frame: .init(x: 0, y: 0, width: self.view.bounds.size.width, height: 300), ImagesArr: ["img_01","img_02","img_03","img_04","img_05"])
+        
+        let banner = BannerView.init(frame: .init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 300), ImagesArr: ["img_01","img_02","img_03","img_04","img_05"])
         banner.Tapdeletage = { tag in
         print("---------\(tag)")
         
