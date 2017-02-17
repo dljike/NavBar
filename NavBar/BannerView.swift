@@ -72,7 +72,7 @@ class BannerView: UIView,UIScrollViewDelegate {
     
     func timerAction() -> Void {
         if (timer == nil) {
-            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(nextPageAction), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(nextPageAction), userInfo: nil, repeats: true)
             RunLoop.current.add(timer, forMode: .commonModes)
         }
      }
@@ -80,9 +80,9 @@ class BannerView: UIView,UIScrollViewDelegate {
         
         var page = self.pageControl.currentPage;
         if (page == (self.imageCount - 1)){
-            page = 0;
+            page = 0
         } else {
-            page += 1;
+            page += 1
         }
         let offset = CGPoint(x: width * CGFloat(page), y: 0)
         self.scrollerView.setContentOffset(offset, animated: true)

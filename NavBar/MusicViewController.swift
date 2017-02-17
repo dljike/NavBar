@@ -18,7 +18,6 @@ class MusicViewController: UIViewController {
         print("---------\(tag)")
         
         }
-        
         self.view.addSubview(banner)
     
     

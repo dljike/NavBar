@@ -44,8 +44,16 @@ class MainViewController: UIViewController {
         controllers.append(musicController)
         controllers.append(bookController)
         
+        for vvvv:UIView in self.pageViewController.view.subviews {
+            if  vvvv is UIScrollView {
+                let tem:UIScrollView =  vvvv as! UIScrollView
+                tem.delegate = self
+                
+            }
+        }
 
-    
+        
+        
     }
 
     @IBAction func OnePageAction(_ sender: Any) {
@@ -80,9 +88,11 @@ extension MainViewController:UIPageViewControllerDataSource,UIPageViewController
             
             if viewController.isKind(of: MovieViewController.self) {
                 return bookController
+                
             }
             else if viewController.isKind(of: MusicViewController.self) {
                 return movieController
+                
             }
             return nil
             
@@ -92,23 +102,53 @@ extension MainViewController:UIPageViewControllerDataSource,UIPageViewController
         func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
             
             if viewController.isKind(of: MovieViewController.self) {
+                
                 return musicController
+                
             }
             else if viewController.isKind(of: BookViewController.self) {
+               
                 return movieController
+               
             }
             return nil
         }
-    
+    // 将要偏移
     func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
         
         
+    }
+    // 偏移完成
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+//        print("========",finished)
+//        print("--------",completed)
+
+        // 第二种方法
+//        print("~~第二种~~~~",controllers .index(of: previousViewControllers[0]) ?? 000)
+        // 第三种
+        let index = self.pageViewController.viewControllers
+        var i = 0
+        for tep in controllers {
+            i += 1
+            if tep == index?[0] {
+//             print("第三种",i)
+
+                return
+            }
+            
+        }
         
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        
-    }
+    
 }
 
+
+extension MainViewController:UIScrollViewDelegate{
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        print(scrollView.contentOffset.x)
+    }
+
+}
 

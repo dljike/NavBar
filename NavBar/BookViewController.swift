@@ -8,13 +8,28 @@
 
 import UIKit
 
-class BookViewController: UIViewController {
+class BookViewController: UIViewController,DBScrollBannerViewDelegate {
 
+     let screenWidth =  UIScreen.main.bounds.size.width
+    var bannerView : DBScrollBannerView! = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+         bannerView = DBScrollBannerView.init(frame: .init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 300), ImagesArr: ["img_01","img_02","img_03","img_04","img_05"])
+        bannerView.delegate = self
+        self.view.addSubview(bannerView)
+        
+        
     }
+    
+    func handleTapAction(index: Int) {
+        
+        print("==========\(index)")
+    }
+
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

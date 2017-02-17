@@ -121,7 +121,7 @@
         <!--Movie View Controller-->
         <scene sceneID="dcv-5R-6lk">
             <objects>
-                <viewController storyboardIdentifier="MovieControllerID" id="NSM-eD-NAR" customClass="MovieViewController" customModule="NavBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlueViewController" id="NSM-eD-NAR" customClass="MovieViewController" customModule="NavBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iZe-UC-TWx"/>
                         <viewControllerLayoutGuide type="bottom" id="Yij-ef-YdB"/>
@@ -135,10 +135,10 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoviewTableViewCell" id="UYT-j1-Auy" customClass="MoviewTableViewCell" customModule="NavBar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UYT-j1-Auy" id="G3y-fA-xBh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3It-Af-40i">
@@ -194,7 +194,7 @@
         <!--Music View Controller-->
         <scene sceneID="uiV-4H-TqX">
             <objects>
-                <viewController storyboardIdentifier="MusicControllerID" id="yE3-Oo-K9w" customClass="MusicViewController" customModule="NavBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GreenViewController" id="yE3-Oo-K9w" customClass="MusicViewController" customModule="NavBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TC3-4f-H8e"/>
                         <viewControllerLayoutGuide type="bottom" id="a8j-yU-tr0"/>
@@ -224,7 +224,7 @@
         <!--Book View Controller-->
         <scene sceneID="QfG-Ag-Xgd">
             <objects>
-                <viewController storyboardIdentifier="BookControllerID" id="y7c-bB-8PM" customClass="BookViewController" customModule="NavBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RedViewController" id="y7c-bB-8PM" customClass="BookViewController" customModule="NavBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E8F-Ak-TXB"/>
                         <viewControllerLayoutGuide type="bottom" id="wc8-db-N5P"/>
@@ -268,10 +268,10 @@
             </objects>
             <point key="canvasLocation" x="3343" y="3092"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Tutorial Page View Controller-->
         <scene sceneID="zIL-tk-aXe">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="pmU-5d-ccW" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="pmU-5d-ccW" customClass="TutorialPageViewController" customModule="NavBar" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PaY-Ew-KR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1582" y="2421"/>
@@ -358,10 +358,10 @@
             </objects>
             <point key="canvasLocation" x="-199" y="136"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Tutorial View Controller-->
         <scene sceneID="Qri-Fy-J5n">
             <objects>
-                <viewController id="yXT-u0-jzT" customClass="MainViewController" customModule="NavBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yXT-u0-jzT" customClass="TutorialViewController" customModule="NavBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t6v-L4-cOi"/>
                         <viewControllerLayoutGuide type="bottom" id="OfA-lR-FW8"/>
@@ -387,7 +387,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="bIz-1e-woS"/>
                     <connections>
-                        <outlet property="navView" destination="1nz-NA-UcW" id="Hm7-0B-rgA"/>
+                        <outlet property="navView" destination="1nz-NA-UcW" id="M0b-Bu-Y8k"/>
+                        <outlet property="onebtn" destination="oJe-tE-4Jg" id="vNb-kp-3iA"/>
+                        <outlet property="threebtn" destination="wBH-qP-llG" id="AVZ-Na-xrU"/>
+                        <outlet property="twobtn" destination="h0n-8C-oiw" id="lEY-p9-e2m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsF-JQ-4C7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -397,14 +400,13 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJe-tE-4Jg">
                             <rect key="frame" x="60" y="7" width="46" height="30"/>
-                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="46" id="4dH-cb-ykg"/>
                                 <constraint firstAttribute="height" constant="30" id="9et-0j-msD"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" title="1"/>
                             <connections>
-                                <action selector="OnePageAction:" destination="yXT-u0-jzT" eventType="touchUpInside" id="Zek-bU-HGn"/>
+                                <action selector="FirstBtnAction:" destination="yXT-u0-jzT" eventType="touchUpInside" id="MMr-FG-cdF"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0n-8C-oiw">
@@ -414,21 +416,20 @@
                                 <constraint firstAttribute="height" constant="30" id="Epz-wl-ufH"/>
                                 <constraint firstAttribute="width" constant="46" id="LHB-Id-5t8"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" title="2"/>
                             <connections>
-                                <action selector="twoViewController:" destination="yXT-u0-jzT" eventType="touchUpInside" id="56T-ac-hz0"/>
+                                <action selector="SecendBtnAction:" destination="yXT-u0-jzT" eventType="touchUpInside" id="5Dh-df-fuw"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBH-qP-llG">
                             <rect key="frame" x="269" y="7" width="46" height="30"/>
-                            <color key="backgroundColor" red="0.076290734109999994" green="0.42786750200000001" blue="0.76842498780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="1QA-un-bTl"/>
                                 <constraint firstAttribute="width" constant="46" id="WY4-hj-F33"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" title="3"/>
                             <connections>
-                                <action selector="threePageAction:" destination="yXT-u0-jzT" eventType="touchUpInside" id="GnB-ao-jaQ"/>
+                                <action selector="ThirthBtnAction:" destination="yXT-u0-jzT" eventType="touchUpInside" id="nF6-GD-sCA"/>
                             </connections>
                         </button>
                     </subviews>
