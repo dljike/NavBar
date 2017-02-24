@@ -59,6 +59,24 @@ class DBScrollBannerView: UIView,UIScrollViewDelegate{
   
     }
     
+    func updateCountAction(ImagesArr:[String]) {
+        //获取数据
+        self.dataSource =  ImagesArr
+        //设置scrollerView
+        self.configureScrollerView()
+        //设置imageView
+        self.configureImageView()
+        //设置页控制器
+        self.configurePageController()
+        if ImagesArr.count > 1 {
+            //设置自动滚动计时器
+//            self.configureAutoScrollTimer()
+        }else{
+            self.scrollerView?.isScrollEnabled = false
+        }
+        self.backgroundColor = UIColor.gray
+    }
+    
     init(frame: CGRect, ImagesArr:[String]) {
         super.init(frame: frame)
         
@@ -109,6 +127,7 @@ class DBScrollBannerView: UIView,UIScrollViewDelegate{
                                                          width: self.scrollerViewWidth!, height: self.scrollerViewHeight! ));
         self.rightImageView = UIImageView(frame: CGRect(x: 2*self.scrollerViewWidth!, y: 0,
                                                         width: self.scrollerViewWidth!, height: self.scrollerViewHeight!));
+
         self.scrollerView?.showsHorizontalScrollIndicator = false
         
         //设置初始时左中右三个imageView的图片（分别时数据源中最后一张，第一张，第二张图片）

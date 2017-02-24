@@ -8,11 +8,11 @@
 
 import UIKit
 
-class BookViewController: UIViewController,DBScrollBannerViewDelegate {
+class BookViewController: UIViewController,DBScrollBannerViewDelegate,BrowserViewDelegate,HJImageBrowserDelegate {
 
      let screenWidth =  UIScreen.main.bounds.size.width
     var bannerView : DBScrollBannerView! = nil
-    
+    var screenView : ImgeBrowserManage! = nil
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,10 +24,72 @@ class BookViewController: UIViewController,DBScrollBannerViewDelegate {
     }
     
     func handleTapAction(index: Int) {
+         print("==========\(index)")
+        let dataArray = ["http://p2.qhimg.com/t011fc13354f12d1a46.jpg",
+                         "http://img.bimg.126.net/photo/Q_YgZ2eYuC1qtuBXeAFMXQ==/1457758904385917359.jpg",
+                         "http://img.taopic.com/uploads/allimg/140714/234975-140G4155Z571.jpg",
+                         "http://image.tianjimedia.com/uploadImages/2012/233/37/HF17SP1LG9QQ.jpg",
+                         "http://pic23.nipic.com/20120908/3073979_090316421000_2.jpg",
+                         "http://image.tianjimedia.com/uploadImages/2015/129/56/J63MI042Z4P8.jpg",
+                         "http://image.tianjimedia.com/uploadImages/2012/233/26/QNK85ZK47V2R.jpg",
+                         "http://n.7k7kimg.cn/2015/0723/1437613406241.jpg",
+                         "http://img.taopic.com/uploads/allimg/120425/95478-12042511120249.jpg",
+                         "http://v1.qzone.cc/pic/201306/29/17/10/51cea48cb4d54713.jpg%21600x600.jpg"]
         
-        print("==========\(index)")
+//        screenView = ImgeBrowserManage.init(frame: self.view.bounds, ImagesArr: ["img_01","img_02","img_03","img_04","img_05"])
+//        screenView.delegate = self
+//        screenView.show()
+        
+        
+        let bview = HJImageBrowser()
+        
+//        bview.delegate = self
+        
+        bview.bottomView = self.view
+        
+        bview.indexImage = index
+        
+        bview.defaultImage = getColorImageWithColor()
+        
+        bview.arrayImage = dataArray
+        
+        bview.show()
+ 
+        
     }
+    
+    func getTheThumbnailImage(_ indexRow: Int) -> UIImage {
+        
+//        let indexPath = IndexPath.init(row: indexRow, section: 0)
+//        
+//        let cell = bannerView
+//        
+//        if cell == nil {
+//            
+            return getColorImageWithColor()
+//
+//        }
+        
+        var imagV = UIImageView()
+        
+//        for temp in (cell?.subviews)! {
+//            
+//            if temp.isKind(of: UIImageView.classForCoder()) {
+//                
+//                imagV = temp as! UIImageView
+//                
+//            }
+//            
+//        }
+        
+//        return imagV.image!
+    }
+    
 
+    
+    func browserHandleTapAction(index: Int) {
+        screenView.removeFromSuperview()
+    }
     
     
 

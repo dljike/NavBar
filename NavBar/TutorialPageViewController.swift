@@ -1,9 +1,9 @@
 //
 //  TutorialPageViewController.swift
-//  UIPageViewController Post
+//  NavBar
 //
-//  Created by Jeffrey Burt on 12/11/15.
-//  Copyright © 2015 Atomic Object. All rights reserved.
+//  Created by 杜博 on 2017/2/14.
+//  Copyright © 2017年 杜博. All rights reserved.
 //
 
 import UIKit
@@ -24,6 +24,7 @@ class TutorialPageViewController: UIPageViewController {
         
         dataSource = self
         delegate = self
+        
         
         if let initialViewController = orderedViewControllers.first {
             scrollToViewController(initialViewController, anima: true)

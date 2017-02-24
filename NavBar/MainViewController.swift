@@ -120,6 +120,7 @@ extension MainViewController:UIPageViewControllerDataSource,UIPageViewController
     }
     // 偏移完成
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+      
 //        print("========",finished)
 //        print("--------",completed)
 

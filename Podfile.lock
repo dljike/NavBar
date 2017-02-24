@@ -1,15 +1,20 @@
 PODS:
   - DZNEmptyDataSet (1.8.1)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SnapKit (3.1.2)
 
 DEPENDENCIES:
   - DZNEmptyDataSet
+  - SDWebImage
   - SnapKit
 
 SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
 
-PODFILE CHECKSUM: e4ee208ef03b5be6fb184a62e08945c4a639ec53
+PODFILE CHECKSUM: fb950d2554df3c559d6c713d6158fbc771a2993f
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

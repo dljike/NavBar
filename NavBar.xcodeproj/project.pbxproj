@@ -10,6 +10,7 @@
 		6FD0742B15AA17021F3B3A14 /* Pods_NavBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8011776DEA74CBE57F6D60D2 /* Pods_NavBar.framework */; };
 		822685F41E541F4400A5BEEE /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822685F31E541F4400A5BEEE /* BannerView.swift */; };
 		822686321E544AAD00A5BEEE /* DBScrollBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822686311E544AAD00A5BEEE /* DBScrollBannerView.swift */; };
+		822D23FE1E5FC68D00206714 /* ImgeBrowserManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D23FD1E5FC68D00206714 /* ImgeBrowserManage.swift */; };
 		823D051C1E51A03300C7543D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D051B1E51A03300C7543D /* AppDelegate.swift */; };
 		823D051E1E51A03300C7543D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D051D1E51A03300C7543D /* ViewController.swift */; };
 		823D05211E51A03300C7543D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823D051F1E51A03300C7543D /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		823D054C1E51A86400C7543D /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D054B1E51A86400C7543D /* OneViewController.swift */; };
 		823D054E1E51A86B00C7543D /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D054D1E51A86B00C7543D /* TwoViewController.swift */; };
 		823D05501E51A87300C7543D /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D054F1E51A87300C7543D /* ThreeViewController.swift */; };
+		827DBEFF1E5FE77A00614B74 /* HJImageBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827DBEFE1E5FE77A00614B74 /* HJImageBrowser.swift */; };
 		828D6F451E55AA28005C3C52 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D6F441E55AA28005C3C52 /* TutorialPageViewController.swift */; };
 		828D6F471E55AA4F005C3C52 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D6F461E55AA4F005C3C52 /* TutorialViewController.swift */; };
 		82E7C2571E52D55A0070A091 /* ThreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7C2551E52D5590070A091 /* ThreeTableViewCell.swift */; };
@@ -55,6 +57,7 @@
 		8011776DEA74CBE57F6D60D2 /* Pods_NavBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		822685F31E541F4400A5BEEE /* BannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		822686311E544AAD00A5BEEE /* DBScrollBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBScrollBannerView.swift; sourceTree = "<group>"; };
+		822D23FD1E5FC68D00206714 /* ImgeBrowserManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgeBrowserManage.swift; sourceTree = "<group>"; };
 		823D05181E51A03300C7543D /* NavBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		823D051B1E51A03300C7543D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		823D051D1E51A03300C7543D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		823D054B1E51A86400C7543D /* OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		823D054D1E51A86B00C7543D /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		823D054F1E51A87300C7543D /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		827DBEFE1E5FE77A00614B74 /* HJImageBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJImageBrowser.swift; sourceTree = "<group>"; };
 		828D6F441E55AA28005C3C52 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		828D6F461E55AA4F005C3C52 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		82E7C2551E52D5590070A091 /* ThreeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeTableViewCell.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				82E7C25F1E52EBAA0070A091 /* BookViewController.swift */,
 				822685F31E541F4400A5BEEE /* BannerView.swift */,
 				822686311E544AAD00A5BEEE /* DBScrollBannerView.swift */,
+				822D23FD1E5FC68D00206714 /* ImgeBrowserManage.swift */,
+				827DBEFE1E5FE77A00614B74 /* HJImageBrowser.swift */,
 				823D051F1E51A03300C7543D /* Main.storyboard */,
 				823D05221E51A03300C7543D /* Assets.xcassets */,
 				823D05241E51A03300C7543D /* LaunchScreen.storyboard */,
@@ -385,9 +391,11 @@
 				823D051E1E51A03300C7543D /* ViewController.swift in Sources */,
 				82E7C2621E53084C0070A091 /* MoviewTableViewCell.swift in Sources */,
 				823D054A1E51A26A00C7543D /* NavBarView.swift in Sources */,
+				822D23FE1E5FC68D00206714 /* ImgeBrowserManage.swift in Sources */,
 				82E7C2601E52EBAA0070A091 /* BookViewController.swift in Sources */,
 				823D05501E51A87300C7543D /* ThreeViewController.swift in Sources */,
 				823D051C1E51A03300C7543D /* AppDelegate.swift in Sources */,
+				827DBEFF1E5FE77A00614B74 /* HJImageBrowser.swift in Sources */,
 				82E7C25C1E52EB540070A091 /* MovieViewController.swift in Sources */,
 				82E7C25E1E52EBA10070A091 /* MusicViewController.swift in Sources */,
 				822686321E544AAD00A5BEEE /* DBScrollBannerView.swift in Sources */,

@@ -1,11 +1,10 @@
 //
 //  TutorialViewController.swift
-//  UIPageViewController Post
+//  NavBar
 //
-//  Created by Jeffrey Burt on 2/3/16.
-//  Copyright © 2016 Seven Even. All rights reserved.
+//  Created by 杜博 on 2017/2/14.
+//  Copyright © 2017年 杜博. All rights reserved.
 //
-
 import UIKit
 
 class TutorialViewController: UIViewController {
@@ -15,6 +14,7 @@ class TutorialViewController: UIViewController {
     @IBOutlet weak var onebtn: UIButton!
     @IBOutlet var navView: UIView!
     
+    var index = 0
     var tutorialPageViewController: TutorialPageViewController? {
         didSet {
             tutorialPageViewController?.tutorialDelegate = self
@@ -46,8 +46,17 @@ class TutorialViewController: UIViewController {
     }
     
     @IBAction func FirstBtnAction(_ sender: Any) {
-        tutorialPageViewController?.scrollToViewController(index: 2, animal: false)
-        self.changNavColor(index: 2)
+//        tutorialPageViewController?.scrollToViewController(index: 2, animal: false)
+//        self.changNavColor(index: 2)
+        
+        if self.index == 0{
+            self.index = 2
+        }else{
+            self.index = 0
+        }
+        tutorialPageViewController?.scrollToViewController(index: self.index, animal: true)
+        self.changNavColor(index: 1)
+        
     }
     
     
@@ -57,7 +66,13 @@ class TutorialViewController: UIViewController {
     }
     
     @IBAction func ThirthBtnAction(_ sender: Any) {
-        tutorialPageViewController?.scrollToViewController(index: 1, animal: false)
+        if self.index == 0{
+            self.index = 1
+        }else{
+            self.index = 0
+        }
+        
+        tutorialPageViewController?.scrollToViewController(index: self.index, animal: true)
         self.changNavColor(index: 1)
         
     }
@@ -90,7 +105,7 @@ extension TutorialViewController: TutorialPageViewControllerDelegate {
         
         print(index)
         self.changNavColor(index: index)
-        
+        self.index = index
         
      }
     
