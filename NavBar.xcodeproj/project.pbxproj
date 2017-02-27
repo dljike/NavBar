@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6FD0742B15AA17021F3B3A14 /* Pods_NavBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8011776DEA74CBE57F6D60D2 /* Pods_NavBar.framework */; };
+		820C945C1E63BF3C00B6EDAD /* ShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C945B1E63BF3C00B6EDAD /* ShareManager.swift */; };
 		822685F41E541F4400A5BEEE /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822685F31E541F4400A5BEEE /* BannerView.swift */; };
 		822686321E544AAD00A5BEEE /* DBScrollBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822686311E544AAD00A5BEEE /* DBScrollBannerView.swift */; };
 		822D23FE1E5FC68D00206714 /* ImgeBrowserManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D23FD1E5FC68D00206714 /* ImgeBrowserManage.swift */; };
+		822F1D5C1E64030E000CCD56 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F1D5B1E64030E000CCD56 /* UIViewController+Extension.swift */; };
 		823D051C1E51A03300C7543D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D051B1E51A03300C7543D /* AppDelegate.swift */; };
 		823D051E1E51A03300C7543D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D051D1E51A03300C7543D /* ViewController.swift */; };
 		823D05211E51A03300C7543D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823D051F1E51A03300C7543D /* Main.storyboard */; };
@@ -55,9 +57,11 @@
 		1A0F3B9C5A03718BDD86C3E3 /* Pods-NavBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavBar/Pods-NavBar.debug.xcconfig"; sourceTree = "<group>"; };
 		389FEFC2EC5EE7F4463283A2 /* Pods-NavBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavBar/Pods-NavBar.release.xcconfig"; sourceTree = "<group>"; };
 		8011776DEA74CBE57F6D60D2 /* Pods_NavBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		820C945B1E63BF3C00B6EDAD /* ShareManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareManager.swift; sourceTree = "<group>"; };
 		822685F31E541F4400A5BEEE /* BannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		822686311E544AAD00A5BEEE /* DBScrollBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBScrollBannerView.swift; sourceTree = "<group>"; };
 		822D23FD1E5FC68D00206714 /* ImgeBrowserManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgeBrowserManage.swift; sourceTree = "<group>"; };
+		822F1D5B1E64030E000CCD56 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		823D05181E51A03300C7543D /* NavBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		823D051B1E51A03300C7543D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		823D051D1E51A03300C7543D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				82E7C2561E52D55A0070A091 /* ThreeTableViewCell.xib */,
 				82E7C2591E52E90B0070A091 /* MainViewController.swift */,
 				823D051B1E51A03300C7543D /* AppDelegate.swift */,
+				822F1D5B1E64030E000CCD56 /* UIViewController+Extension.swift */,
 				828D6F441E55AA28005C3C52 /* TutorialPageViewController.swift */,
 				828D6F461E55AA4F005C3C52 /* TutorialViewController.swift */,
 				82E7C25D1E52EBA10070A091 /* MusicViewController.swift */,
@@ -166,6 +171,7 @@
 				822686311E544AAD00A5BEEE /* DBScrollBannerView.swift */,
 				822D23FD1E5FC68D00206714 /* ImgeBrowserManage.swift */,
 				827DBEFE1E5FE77A00614B74 /* HJImageBrowser.swift */,
+				820C945B1E63BF3C00B6EDAD /* ShareManager.swift */,
 				823D051F1E51A03300C7543D /* Main.storyboard */,
 				823D05221E51A03300C7543D /* Assets.xcassets */,
 				823D05241E51A03300C7543D /* LaunchScreen.storyboard */,
@@ -395,7 +401,9 @@
 				82E7C2601E52EBAA0070A091 /* BookViewController.swift in Sources */,
 				823D05501E51A87300C7543D /* ThreeViewController.swift in Sources */,
 				823D051C1E51A03300C7543D /* AppDelegate.swift in Sources */,
+				822F1D5C1E64030E000CCD56 /* UIViewController+Extension.swift in Sources */,
 				827DBEFF1E5FE77A00614B74 /* HJImageBrowser.swift in Sources */,
+				820C945C1E63BF3C00B6EDAD /* ShareManager.swift in Sources */,
 				82E7C25C1E52EB540070A091 /* MovieViewController.swift in Sources */,
 				82E7C25E1E52EBA10070A091 /* MusicViewController.swift in Sources */,
 				822686321E544AAD00A5BEEE /* DBScrollBannerView.swift in Sources */,

@@ -804,7 +804,7 @@ let imageInterval = CGFloat(20)
 let viewTheBackgroundColor = UIColor.init(colorLiteralRed: 50/225.0, green: 50/225.0, blue: 50/225.0, alpha: 1)
 
 /// 动画时间 && Animation time
-let animationTime = 0.5
+let animationTime = 0.3
 
 ///  进度条字体颜色 The progress bar font color
 let progressColor = UIColor.white

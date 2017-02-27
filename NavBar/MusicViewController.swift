@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SDCAlertView
 
-class MusicViewController: UIViewController {
+class MusicViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,24 @@ class MusicViewController: UIViewController {
     
     }
 
+    
+    @IBAction func buttonAction(_ sender: Any) {
+        
+        
+        ShareManager.sharedInstance.share()
+        
+        
+    }
+    
+    func oneAction() -> Void {
+        
+        
+    }
+    func twoAction() -> Void {
+        
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Social
+
 
 class BookViewController: UIViewController,DBScrollBannerViewDelegate,BrowserViewDelegate,HJImageBrowserDelegate {
 
@@ -36,9 +38,12 @@ class BookViewController: UIViewController,DBScrollBannerViewDelegate,BrowserVie
                          "http://img.taopic.com/uploads/allimg/120425/95478-12042511120249.jpg",
                          "http://v1.qzone.cc/pic/201306/29/17/10/51cea48cb4d54713.jpg%21600x600.jpg"]
         
+        
 //        screenView = ImgeBrowserManage.init(frame: self.view.bounds, ImagesArr: ["img_01","img_02","img_03","img_04","img_05"])
 //        screenView.delegate = self
 //        screenView.show()
+        
+        
         
         
         let bview = HJImageBrowser()
@@ -54,9 +59,35 @@ class BookViewController: UIViewController,DBScrollBannerViewDelegate,BrowserVie
         bview.arrayImage = dataArray
         
         bview.show()
- 
         
+        // 分享
+        
+//        let textToShare = "百度"
+//        let imageToShare = UIImage.init(named: "img_01")
+//        let urlToShare = NSURL.init(string: "http://www.baidu.com")
+//        let items = [textToShare,imageToShare ?? "WeShare",urlToShare ?? "WeShare"] as [Any]
+//        let activityVC = UIActivityViewController(
+//            activityItems: items,
+//            applicationActivities: nil)
+//        
+//        self.present(activityVC, animated: true, completion: { () -> Void in
+//            
+//        })
+//
+//        activityVC.completionWithItemsHandler =  { activity, success, items, error in
+//         print(
+//            activity ?? 111)
+//            print(success)
+//            print(items ?? 2222)
+//            print(error ?? 33333)
+//        
+//        }
+        
+    
+    
     }
+
+    
     
     func getTheThumbnailImage(_ indexRow: Int) -> UIImage {
         
