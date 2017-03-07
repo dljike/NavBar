@@ -34,6 +34,7 @@
 		82E7C25E1E52EBA10070A091 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7C25D1E52EBA10070A091 /* MusicViewController.swift */; };
 		82E7C2601E52EBAA0070A091 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7C25F1E52EBAA0070A091 /* BookViewController.swift */; };
 		82E7C2621E53084C0070A091 /* MoviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7C2611E53084C0070A091 /* MoviewTableViewCell.swift */; };
+		82F604B51E697C4400ECF2AF /* Double+km.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F604B41E697C4400ECF2AF /* Double+km.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		82E7C25D1E52EBA10070A091 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		82E7C25F1E52EBAA0070A091 /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		82E7C2611E53084C0070A091 /* MoviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviewTableViewCell.swift; sourceTree = "<group>"; };
+		82F604B41E697C4400ECF2AF /* Double+km.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+km.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				82E7C2561E52D55A0070A091 /* ThreeTableViewCell.xib */,
 				82E7C2591E52E90B0070A091 /* MainViewController.swift */,
 				823D051B1E51A03300C7543D /* AppDelegate.swift */,
+				82F604B41E697C4400ECF2AF /* Double+km.swift */,
 				822F1D5B1E64030E000CCD56 /* UIViewController+Extension.swift */,
 				828D6F441E55AA28005C3C52 /* TutorialPageViewController.swift */,
 				828D6F461E55AA4F005C3C52 /* TutorialViewController.swift */,
@@ -396,6 +399,7 @@
 				823D054E1E51A86B00C7543D /* TwoViewController.swift in Sources */,
 				823D051E1E51A03300C7543D /* ViewController.swift in Sources */,
 				82E7C2621E53084C0070A091 /* MoviewTableViewCell.swift in Sources */,
+				82F604B51E697C4400ECF2AF /* Double+km.swift in Sources */,
 				823D054A1E51A26A00C7543D /* NavBarView.swift in Sources */,
 				822D23FE1E5FC68D00206714 /* ImgeBrowserManage.swift in Sources */,
 				82E7C2601E52EBAA0070A091 /* BookViewController.swift in Sources */,

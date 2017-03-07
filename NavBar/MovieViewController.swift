@@ -13,20 +13,35 @@ class MovieViewController: UIViewController {
 
     @IBOutlet weak var tableview: UITableView!
     
+    var imgArr:[UIImage] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        for index in 1...5 {
+            let name = "img_0\(index)"
+            
+            let img = UIImage.init(named: name)
+            imgArr.append(img!)
+            
+        }
+        
         // Do any additional setup after loading the view.
         
         self.tableview.emptyDataSetSource = self
         self.tableview.emptyDataSetDelegate = self
         self.tableview.delegate = self
         
+        
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
 }
@@ -48,26 +63,45 @@ extension MovieViewController:DZNEmptyDataSetDelegate,DZNEmptyDataSetSource{
     
 }
 
+extension MovieViewController:UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate{
 
-
-extension MovieViewController:UITableViewDelegate,UITableViewDataSource{
-
+    
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 10
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 30
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:MoviewTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MoviewTableViewCell", for: indexPath as IndexPath) as! MoviewTableViewCell
         
+//        cell.imgView.animationImages =  imgArr
+//        cell.imgView.animationRepeatCount = Int(INT16_MAX)
+//        cell.imgView.animationDuration = Double(imgArr.count) * 0.1
+//        cell.imgView.startAnimating()
         
         return cell
     }
+
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+//        let cell = cell as! MoviewTableViewCell
+//                cell.imgView.animationImages =  imgArr
+//                cell.imgView.animationRepeatCount = Int(INT16_MAX) // 0
+//                cell.imgView.animationDuration = Double(imgArr.count) * 0.1
+//                cell.imgView.startAnimating()
+
+    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+    }
     
-    
+ 
     
 
 

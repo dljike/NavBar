@@ -706,7 +706,7 @@ class cireview: UIView{
         didSet { self.setNeedsDisplay() }
     }
     
-    var contentLabel: UILabel!
+    var activie: UIActivityIndicatorView!
     
     override init(frame: CGRect) {
         
@@ -716,17 +716,12 @@ class cireview: UIView{
         
         self.backgroundColor = progressViewBackColor
         
-        contentLabel = UILabel.init(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
+        activie = UIActivityIndicatorView.init()
+        activie.center = self.center
+        activie.hidesWhenStopped = true
         
-        contentLabel.textAlignment = .center
         
-        contentLabel.textColor = progressColor
-        
-        contentLabel.adjustsFontSizeToFitWidth = true
-        
-        contentLabel.text = "3%"
-        
-        self.addSubview(contentLabel)
+        self.addSubview(activie)
     }
 
     override func draw(_ rect: CGRect) {
@@ -764,8 +759,9 @@ class cireview: UIView{
         
         let content = Int(self.value * 100)
         
-        self.contentLabel.text = String.init(content) + "%"
+//        self.contentLabel.text = String.init(content) + "%"
 
+        activie.startAnimating()
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SDCAlertView
+
 
 class MusicViewController: UIViewController{
 
@@ -26,11 +26,7 @@ class MusicViewController: UIViewController{
 
     
     @IBAction func buttonAction(_ sender: Any) {
-        
-        
-        ShareManager.sharedInstance.share()
-        
-        
+
     }
     
     func oneAction() -> Void {

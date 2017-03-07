@@ -39,12 +39,7 @@ class BookViewController: UIViewController,DBScrollBannerViewDelegate,BrowserVie
                          "http://v1.qzone.cc/pic/201306/29/17/10/51cea48cb4d54713.jpg%21600x600.jpg"]
         
         
-//        screenView = ImgeBrowserManage.init(frame: self.view.bounds, ImagesArr: ["img_01","img_02","img_03","img_04","img_05"])
-//        screenView.delegate = self
-//        screenView.show()
-        
-        
-        
+       
         
         let bview = HJImageBrowser()
         
@@ -60,26 +55,41 @@ class BookViewController: UIViewController,DBScrollBannerViewDelegate,BrowserVie
         
         bview.show()
         
+//******************************************************************************************
+//******************************************************************************************
+        
+//
         // 分享
+        
+//        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook) {
+//            
+//            let controller:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+//            controller.setInitialText("一起来swift吧！")
+//            controller.add(UIImage(named: "img_01"))
+//            self.present(controller, animated: true, completion: nil)
+//        }
+//        else {
+//            print("You are not logged in to your Twitter account.")
+//        }
+        
         
 //        let textToShare = "百度"
 //        let imageToShare = UIImage.init(named: "img_01")
 //        let urlToShare = NSURL.init(string: "http://www.baidu.com")
 //        let items = [textToShare,imageToShare ?? "WeShare",urlToShare ?? "WeShare"] as [Any]
-//        let activityVC = UIActivityViewController(
+//                let activityVC = UIActivityViewController(
 //            activityItems: items,
 //            applicationActivities: nil)
-//        
+////        activityVC.excludedActivityTypes = [UIActivityType.print, UIActivityType.postToWeibo, UIActivityType.copyToPasteboard, UIActivityType.addToReadingList, UIActivityType.postToVimeo]
 //        self.present(activityVC, animated: true, completion: { () -> Void in
 //            
 //        })
 //
 //        activityVC.completionWithItemsHandler =  { activity, success, items, error in
-//         print(
-//            activity ?? 111)
-//            print(success)
-//            print(items ?? 2222)
-//            print(error ?? 33333)
+//         print(activity ?? 111)
+//         print(success)
+//         print(items ?? 2222)
+//         print(error ?? 33333)
 //        
 //        }
         
@@ -122,7 +132,7 @@ class BookViewController: UIViewController,DBScrollBannerViewDelegate,BrowserVie
         screenView.removeFromSuperview()
     }
     
-    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
